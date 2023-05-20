@@ -25,4 +25,9 @@ function index(req, res) {
     Skill.create(req.body)
     res.redirect('/skills');
 }
+
+function deleteSkill(req, res) {
+    skill.deleteOne(req.params.id);
+    res.redirect('/skills');
+  }
   
