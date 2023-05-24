@@ -24,7 +24,7 @@ function index(req, res) {
     }
 
     function create(req, res) {
-    //   let skill = Skill.getOne.create (req.body)
+    // let skill = Skill.getOne.create (req.body)
     Skill.create(req.body)
     res.redirect('/skills');
 }
